@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "fresh_virtual_environment": true,
+  "fresh_package_install": true,
+  "second_physical_machine": false,
+  "reused_dataset_cache": true,
+  "score_rows": 48,
+  "prediction_records": 96000,
+  "predictions_byte_identical": true,
+  "bootstrap_analysis_identical": true,
+  "no_retuning": true,
+  "note": "Repeated evaluation verifies deterministic reproduction of the same frozen pipeline; it is not an additional independent experimental sample."
+}

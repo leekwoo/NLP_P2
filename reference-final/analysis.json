@@ -1,0 +1,125 @@
+{
+  "scope": "AI-executed frozen final-test evaluation",
+  "summary": [
+    {
+      "feature": "word",
+      "augmented": false,
+      "means": [
+        0.6949315375052733,
+        0.6510412493797068,
+        0.5868777700294242,
+        0.33603576678726005
+      ],
+      "std": [
+        0.014237067015910654,
+        0.010830153160382695,
+        0.007205652878870064,
+        0.0006341052282942936
+      ],
+      "mean_perturbed": 0.5246515953987969,
+      "std_perturbed": 0.005286712747233895,
+      "mean_drop": 0.17027994210647626
+    },
+    {
+      "feature": "word",
+      "augmented": true,
+      "means": [
+        0.6913112023668923,
+        0.6540113273484368,
+        0.5929076552996068,
+        0.336097423688628
+      ],
+      "std": [
+        0.0046222228648226974,
+        0.0012516444828059273,
+        0.01013368055902389,
+        0.0009070460315879697
+      ],
+      "mean_perturbed": 0.5276721354455572,
+      "std_perturbed": 0.004048985335210087,
+      "mean_drop": 0.16363906692133492
+    },
+    {
+      "feature": "char",
+      "augmented": false,
+      "means": [
+        0.7976904082710279,
+        0.7968482299156561,
+        0.795015160597683,
+        0.7920444200862017
+      ],
+      "std": [
+        0.0017819486949979823,
+        0.0030418447304262947,
+        0.0028090854421418967,
+        0.005148843932573049
+      ],
+      "mean_perturbed": 0.7946359368665136,
+      "std_perturbed": 0.003434676972364523,
+      "mean_drop": 0.003054471404514425
+    },
+    {
+      "feature": "char",
+      "augmented": true,
+      "means": [
+        0.798525822789899,
+        0.7990145674323611,
+        0.7998257652786349,
+        0.7978492776281776
+      ],
+      "std": [
+        0.0043795037539519225,
+        0.006578305450280236,
+        0.0015236470485887996,
+        0.004499301945398802
+      ],
+      "mean_perturbed": 0.7988965367797246,
+      "std_perturbed": 0.0036288185635374184,
+      "mean_drop": -0.0003707139898256144
+    }
+  ],
+  "comparisons": {
+    "h1_word_drop_minus_char_drop": {
+      "estimate": 0.16722547070196184,
+      "ci95_percentile": [
+        0.1539966601959361,
+        0.18049627001274818
+      ]
+    },
+    "h2_word_perturbed_gain": {
+      "estimate": 0.0030205400467602597,
+      "ci95_percentile": [
+        -0.0016144826946493827,
+        0.007761410154391124
+      ]
+    },
+    "h2_char_perturbed_gain": {
+      "estimate": 0.004260599913211038,
+      "ci95_percentile": [
+        0.0011996834668408453,
+        0.007395337426976947
+      ]
+    },
+    "h2_word_original_change": {
+      "estimate": -0.0036203351383810776,
+      "ci95_percentile": [
+        -0.011383370727535808,
+        0.0034631538648979047
+      ]
+    },
+    "h2_char_original_change": {
+      "estimate": 0.000835414518870999,
+      "ci95_percentile": [
+        -0.002839218571499239,
+        0.004338287214858994
+      ]
+    }
+  },
+  "bootstrap": {
+    "replicates": 1000,
+    "seed": 11042026,
+    "unit": "review ID, paired across all models, rates and seeds",
+    "interval": "95% percentile, conditional on trained models, not corrected for multiple comparisons"
+  },
+  "verification": "All 96,000 saved predictions and 48 metric rows checked; identical evaluation texts across models/seeds."
+}

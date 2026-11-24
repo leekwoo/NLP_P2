@@ -1,0 +1,16 @@
+% Generated from frozen final-test results. No illustrative values.
+\begin{table*}[t]
+\centering
+\begin{tabular}{llrrrrrr}
+\toprule
+Features & Augmentation & Original & $p=.25$ & $p=.50$ & $p=1$ & Perturbed mean & Drop \\
+\midrule
+Eojeol & No & 0.6949 & 0.6510 & 0.5869 & 0.3360 & 0.5247 & 0.1703 \\
+Eojeol & Yes & 0.6913 & 0.6540 & 0.5929 & 0.3361 & 0.5277 & 0.1636 \\
+Character & No & 0.7977 & 0.7968 & 0.7950 & 0.7920 & 0.7946 & 0.0031 \\
+Character & Yes & 0.7985 & 0.7990 & 0.7998 & 0.7978 & 0.7989 & -0.0004 \\
+\bottomrule
+\end{tabular}
+\caption{Frozen final-test macro-F1 averaged over three seeds on 2,000 reviews. Perturbed mean averages the three separately computed nonzero-deletion scores. Drop is original minus perturbed mean; a negative drop denotes a higher perturbed mean.}
+\label{tab:final-results}
+\end{table*}

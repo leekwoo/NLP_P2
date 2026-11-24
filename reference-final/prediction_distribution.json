@@ -1,0 +1,98 @@
+[
+  {
+    "seed": 42,
+    "feature": "word",
+    "augmented": false,
+    "positive": 4,
+    "negative": 1996,
+    "n": 2000
+  },
+  {
+    "seed": 42,
+    "feature": "word",
+    "augmented": true,
+    "positive": 8,
+    "negative": 1992,
+    "n": 2000
+  },
+  {
+    "seed": 42,
+    "feature": "char",
+    "augmented": false,
+    "positive": 950,
+    "negative": 1050,
+    "n": 2000
+  },
+  {
+    "seed": 42,
+    "feature": "char",
+    "augmented": true,
+    "positive": 939,
+    "negative": 1061,
+    "n": 2000
+  },
+  {
+    "seed": 43,
+    "feature": "word",
+    "augmented": false,
+    "positive": 4,
+    "negative": 1996,
+    "n": 2000
+  },
+  {
+    "seed": 43,
+    "feature": "word",
+    "augmented": true,
+    "positive": 4,
+    "negative": 1996,
+    "n": 2000
+  },
+  {
+    "seed": 43,
+    "feature": "char",
+    "augmented": false,
+    "positive": 954,
+    "negative": 1046,
+    "n": 2000
+  },
+  {
+    "seed": 43,
+    "feature": "char",
+    "augmented": true,
+    "positive": 955,
+    "negative": 1045,
+    "n": 2000
+  },
+  {
+    "seed": 44,
+    "feature": "word",
+    "augmented": false,
+    "positive": 3,
+    "negative": 1997,
+    "n": 2000
+  },
+  {
+    "seed": 44,
+    "feature": "word",
+    "augmented": true,
+    "positive": 4,
+    "negative": 1996,
+    "n": 2000
+  },
+  {
+    "seed": 44,
+    "feature": "char",
+    "augmented": false,
+    "positive": 935,
+    "negative": 1065,
+    "n": 2000
+  },
+  {
+    "seed": 44,
+    "feature": "char",
+    "augmented": true,
+    "positive": 928,
+    "negative": 1072,
+    "n": 2000
+  }
+]

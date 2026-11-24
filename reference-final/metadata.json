@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "started_scope": "final_test",
+  "utc_completed": "2026-11-24T03:42:48.785109+00:00",
+  "args": {
+    "data_dir": "work/nsmc",
+    "out": "outputs/HW2_Preparation/results/final_test",
+    "train_size": 10000,
+    "eval_size": 2000,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "max_features": 30000,
+    "final_test": true
+  },
+  "command": [
+    "outputs/HW2_Preparation/code/run_experiment.py",
+    "--data-dir",
+    "work/nsmc",
+    "--train-size",
+    "10000",
+    "--eval-size",
+    "2000",
+    "--seeds",
+    "42",
+    "43",
+    "44",
+    "--final-test",
+    "--out",
+    "outputs/HW2_Preparation/results/final_test"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1"
+  },
+  "dataset_commit": "cc0670e872d4ac27bfe36c87456783004b39ef6c",
+  "data_sha256": {
+    "ratings_train.txt": "e03b7d14e9e41be8d464a28057cd25d7396c53e67aa7fd5f7e552c59b0ee2940",
+    "ratings_test.txt": "8ac9f64052f11dbf6ae0acb5e038f03d90a76f0eda7820cfb3a92d02edfcebda"
+  },
+  "script_sha256": "864cb2c2212347ac56876a68674ff1f61d3747f36c3f2e7889d685546586efb4",
+  "total_seconds": 24.10054299980402,
+  "deduplicated_official_train": 145709,
+  "split_seed": 2026,
+  "noise_seed": 9000,
+  "note": "Original NSMC text may already contain noise. Word means whitespace-delimited eojeol, not morphological word."
+}

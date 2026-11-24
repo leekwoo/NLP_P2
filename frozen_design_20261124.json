@@ -1,0 +1,65 @@
+{
+  "frozen_before_final_test": true,
+  "recorded_utc": "2026-11-24T03:41:59.600155+00:00",
+  "client_date": "2026-11-24",
+  "scope": "Freeze following development analysis, not preregistration",
+  "author_decisions": {
+    "original_tolerance": 0.01,
+    "preservation_rule": "95% paired-bootstrap CI lower bound of augmented-minus-unaugmented original macro-F1 > -0.01 (strict)",
+    "sensitivity_tolerance": 0.005,
+    "no_change_after_test": true
+  },
+  "training": {
+    "n_original": 10000,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "eojeol_ngram": [
+      1,
+      2
+    ],
+    "char_ngram": [
+      2,
+      5
+    ],
+    "max_features": 30000,
+    "min_df": 2,
+    "sublinear_tf": true,
+    "lowercase": false,
+    "C": 1.0,
+    "solver": "liblinear",
+    "max_iter": 1000,
+    "augmentation_probability": 0.5,
+    "sample_weights": [
+      0.5,
+      0.5
+    ]
+  },
+  "evaluation": {
+    "official_test_sample": 2000,
+    "sample_seed": 2026,
+    "noise_seed": 9000,
+    "deletion_probabilities": [
+      0,
+      0.25,
+      0.5,
+      1.0
+    ]
+  },
+  "bootstrap": {
+    "replicates": 1000,
+    "seed": 11042026,
+    "confidence": 0.95,
+    "method": "review-ID paired percentile, conditional on trained models, no multiplicity correction"
+  },
+  "hypothesis_rules": {
+    "h1": "lower CI bound for eojeol mean drop minus character mean drop > 0 supports H1",
+    "h2": "perturbed-gain lower CI > 0 AND original-change lower CI > -0.01; assess each representation separately; boundary crossing is inconclusive"
+  },
+  "code_sha256": {
+    "run_experiment.py": "864cb2c2212347ac56876a68674ff1f61d3747f36c3f2e7889d685546586efb4",
+    "analyze_development.py": "afbfcdf1488d9df4800e46af4329e9150d077031cf5157e8d03d52eb05cd8a66"
+  }
+}

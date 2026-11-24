@@ -1,0 +1,40 @@
+{
+  "margin": 0.01,
+  "strict_rule": "original change lower bound > -margin",
+  "fixed_before_final_test": true,
+  "sensitivity_margin": 0.005,
+  "by_scope": {
+    "development": {
+      "word": {
+        "original_ci_lower": -0.006246161653132119,
+        "original_within_tolerance": true,
+        "within_stricter_tolerance": false,
+        "perturbed_gain_ci_lower": -0.0013590618855445174,
+        "h2_supported": false
+      },
+      "char": {
+        "original_ci_lower": -0.0023377540989545807,
+        "original_within_tolerance": true,
+        "within_stricter_tolerance": true,
+        "perturbed_gain_ci_lower": 0.00199998331909891,
+        "h2_supported": true
+      }
+    },
+    "final_test": {
+      "word": {
+        "original_ci_lower": -0.011383370727535808,
+        "original_within_tolerance": false,
+        "within_stricter_tolerance": false,
+        "perturbed_gain_ci_lower": -0.0016144826946493827,
+        "h2_supported": false
+      },
+      "char": {
+        "original_ci_lower": -0.002839218571499239,
+        "original_within_tolerance": true,
+        "within_stricter_tolerance": true,
+        "perturbed_gain_ci_lower": 0.0011996834668408453,
+        "h2_supported": true
+      }
+    }
+  }
+}

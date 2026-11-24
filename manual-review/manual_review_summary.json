@@ -1,0 +1,27 @@
+{
+  "reviewed_source_reviews": 50,
+  "reviewed_pairs": 150,
+  "judgments": {
+    "감성 유지": 130,
+    "원문과 동일(별도 표시)": 20
+  },
+  "by_deletion_probability": {
+    "0.25": {
+      "감성 유지": 39,
+      "원문과 동일(별도 표시)": 11
+    },
+    "0.5": {
+      "감성 유지": 44,
+      "원문과 동일(별도 표시)": 6
+    },
+    "1.0": {
+      "감성 유지": 47,
+      "원문과 동일(별도 표시)": 3
+    }
+  },
+  "rater_count": 1,
+  "sentiment_change_reported": 0,
+  "indeterminate_reported": 0,
+  "unchanged_pairs_are_not_assigned_sentiment_judgments": true,
+  "note": "Preservation includes cases where the original ambiguity remains. This does not validate the binary gold labels or establish population-wide preservation."
+}
