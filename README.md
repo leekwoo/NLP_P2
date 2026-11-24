@@ -54,7 +54,7 @@ The development script also generates20 cases at seed1105 before examining corre
 
 Codex executed the experiments, analysis and reproduction check. The author supplied the motivation, Korean drafts, interpretation of development results,150 human judgments, and the tolerance decision. Do not describe AI-executed experiments as unaided author execution. The author identified the HW2 model as Astra 6.2. Earlier HW1 work used GPT-6 Astra, as reported by the author.
 
-The archive excludes raw dataset files, prediction texts, model checkpoints and installed environments. Source: https://github.com/e9t/nsmc . No clear redistribution license is asserted. A shareable code URL and independent-machine execution remain unverified; local ZIP preparation alone does not fulfill those requirements. No file is uploaded by these commands.
+The archive excludes raw dataset files, prediction texts, model checkpoints and installed environments. Source: https://github.com/e9t/nsmc . No clear redistribution license is asserted. Code is publicly available at https://github.com/leekwoo/NLP_P2. Public access was verified on November 24, 2026. Execution on a separate fresh machine remains unverified; the successful check used a new virtual environment on the original computer. These commands do not upload files.
 
 
 ## Frozen decisions and prediction-count analysis
@@ -64,3 +64,15 @@ python summarize_final.py results/final_test results/final_analysis frozen_desig
 ```
 
 This writes the strict0.01/0.005 decisions and the class-prediction counts used in the paper. It does not fit or tune any model.
+
+## Paper table mapping
+
+- Table 1: final experiment and analysis commands above; seed means in analysis.json.
+- Table 2: final paired-bootstrap analysis; five contrasts in analysis.json.
+- Table 3: development experiment followed by diagnose_features.py.
+- Table 4: recorded author judgments in manual-review/manual_review_summary.json; these are human observations, not model-generated labels.
+- Table 5: final analysis.json sample standard deviations across training seeds.
+
+## Fresh-machine check still to complete
+
+On a separate computer, download this repository, install the pinned requirements in a new environment, and run the final experiment, analysis, and verification commands above. Start without copied dataset files so the pinned download is checked as well. Retain the environment details and logs. Exact cross-platform agreement is not assumed: investigate and report differences instead of changing the frozen settings to force agreement. The supplied reference results and same-machine reproduction record do not establish that this step has been completed.
